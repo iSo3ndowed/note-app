@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Raleway:wght@300;400;500&display=swap');
+body {
+    margin: 0;
+    font-family: poppins;
+  }
+  
+  #app {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto;
+    padding: 24px;
+    gap: 24px;
+  }
+  
+  .note {
+    height: 60px;
+    padding: 16px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+    resize: none;
+    font-family: sans-serif;
+    font-size: 16px;
+  }
+  .container{
+    height: 100vh;
+    background-color: white;
+  }
+  .container h1{
+    text-align: center;
+    text-transform: capitalize;
+    color: midnightblue;
+    background: white;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+
+    
+  }
+  textarea{
+    height: auto;
+  }
+  .container .header{
+    right: -50%;
+    left: -50%;
+  }
+  .fa-solid{
+    font-size: 55px;
+    padding: 1rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    color: midnightblue;
+    cursor: pointer;
+    position: fixed;
+    bottom: 30px;
+    right: 60px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+    font-weight: 100;
+    border: 1px solid midnightblue;
+
+  }
+  
+  .fa-solid:hover {
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  @media (max-width: 420px){
+    #app{
+      grid-template-columns: 50% 50%;
+      gap: 10px;
+    }
+  }
+  
